@@ -59,7 +59,7 @@ li.navbar-logo
 header
 {
 	background		:	#f1f1f1;
-	background		:	linear-gradient(90deg, rgb(53, 73, 170) 0%, rgba(93, 56, 171, 0.827) 60%, rgb(166, 64, 194) 100%);
+	background		:	linear-gradient(120deg, rgb(0, 0, 0) 6%, rgba(49, 49, 49, 0.827) 40%, rgb(123, 123, 123) 100%);
 }
 
 .navbar, #navbar
