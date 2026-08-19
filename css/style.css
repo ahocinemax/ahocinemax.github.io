@@ -573,8 +573,7 @@ section { padding: 96px 0; }
 	width: 52px;
 	height: 52px;
 	border-radius: 14px;
-	background: color-mix(in srgb, var(--tech-color) 18%, transparent);
-	color: var(--tech-color);
+	background: #f4f5f8;
 	animation: tech-float 5.5s ease-in-out infinite;
 	animation-delay: calc(var(--i, 0) * -0.7s);
 	transition: transform 0.25s ease;
@@ -584,7 +583,7 @@ section { padding: 96px 0; }
 	transform: rotate(-6deg) scale(1.08);
 }
 
-.tech-icon svg { width: 26px; height: 26px; }
+.tech-icon img { width: 26px; height: 26px; object-fit: contain; display: block; }
 
 .tech-glyph {
 	font-family: var(--font-display);
