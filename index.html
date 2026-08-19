@@ -15,12 +15,15 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 	<a class="skip-link" href="#main">Aller au contenu</a>
+
+	<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+	<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
 	<header class="site-header" id="site-header">
 		<div class="wrap header-inner">
@@ -49,35 +52,46 @@
 	<main id="main">
 		<!-- Hero -->
 		<section class="hero" id="home">
+			<canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
 			<div class="hero-glow" aria-hidden="true"></div>
 			<div class="wrap hero-inner">
-				<p class="eyebrow reveal">Développeur Full-Stack Freelance</p>
-				<h1 class="reveal">
-					Je conçois des <span class="text-gradient">outils métier</span><br />
-					qui font vraiment tourner des entreprises.
-				</h1>
-				<p class="hero-lead reveal">
-					Alumni de l'école 42, indépendant depuis, je construis des logiciels sur-mesure —
-					de la caisse de restaurant en production à des CRM de gestion de chantier —
-					pensés pour résoudre des problèmes réels, pas des cas d'école.
-				</p>
-				<div class="hero-actions reveal">
-					<a href="#projects" class="btn btn-primary">Voir mes projets</a>
-					<a href="#contact" class="btn btn-ghost">Me contacter</a>
+				<div class="hero-copy">
+					<p class="eyebrow reveal">Développeur Full-Stack Freelance</p>
+					<h1 class="reveal">
+						Je conçois des <em>outils métier</em><br />
+						qui font vraiment tourner des entreprises.
+					</h1>
+					<p class="hero-lead reveal">
+						Alumni de l'école 42, indépendant depuis, je construis des logiciels sur-mesure —
+						de la caisse de restaurant en production à des CRM de gestion de chantier —
+						pensés pour résoudre des problèmes réels, pas des cas d'école.
+					</p>
+					<div class="hero-actions reveal">
+						<a href="#projects" class="btn btn-primary" data-magnetic><span>Voir mes projets</span></a>
+						<a href="#contact" class="btn btn-ghost" data-magnetic><span>Me contacter</span></a>
+					</div>
+					<div class="hero-stats reveal">
+						<div class="stat">
+							<span class="stat-num">3</span>
+							<span class="stat-label">SaaS &amp; outils métier en production</span>
+						</div>
+						<div class="stat">
+							<span class="stat-num">4+</span>
+							<span class="stat-label">Projets systèmes &amp; algo à 42</span>
+						</div>
+						<div class="stat">
+							<span class="stat-num">100%</span>
+							<span class="stat-label">Projets nés de besoins réels</span>
+						</div>
+					</div>
 				</div>
-				<div class="hero-stats reveal">
-					<div class="stat">
-						<span class="stat-num">3</span>
-						<span class="stat-label">SaaS &amp; outils métier en production</span>
+
+				<div class="hero-terminal reveal" aria-hidden="true">
+					<div class="terminal-bar">
+						<span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+						<span class="terminal-title">zsh — hocine@freelance</span>
 					</div>
-					<div class="stat">
-						<span class="stat-num">4+</span>
-						<span class="stat-label">Projets systèmes &amp; algo à 42</span>
-					</div>
-					<div class="stat">
-						<span class="stat-num">100%</span>
-						<span class="stat-label">Projets nés de besoins réels</span>
-					</div>
+					<pre class="terminal-body" id="terminalBody"></pre>
 				</div>
 			</div>
 		</section>
@@ -425,6 +439,7 @@
 		</div>
 	</footer>
 
+	<script src="js/webgl-bg.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
