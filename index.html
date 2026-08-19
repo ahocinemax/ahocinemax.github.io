@@ -1,132 +1,363 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-	<!-- Basic -->
-	<meta charset="utf-8" />
-	<link rel="icon" href="images/logo.png">
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Hocine Abdessalam — Développeur Full-Stack</title>
+	<meta name="description" content="Hocine Abdessalam, développeur full-stack freelance et alumni de l'école 42. Conception d'outils métier sur-mesure : SaaS de caisse, CRM et dashboards de gestion." />
+	<meta name="author" content="Hocine Abdessalam" />
 
-	<title>My Curriculum</title>
+	<meta property="og:title" content="Hocine Abdessalam — Développeur Full-Stack" />
+	<meta property="og:description" content="Développeur freelance & alumni 42. Je conçois des outils métier sur-mesure : SaaS, CRM, dashboards." />
+	<meta property="og:type" content="website" />
 
-	<!-- slider stylesheet -->
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<!-- style -->
-	<link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" />
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23141821'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial,sans-serif' font-weight='700' fill='%236c8cff' text-anchor='middle'%3EHA%3C/text%3E%3C/svg%3E" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-	<!-- header section -->
-	<header class="header-section">
-		<div class="container-fluid">
-			<nav class="navbar sticky-top">
-				<ul class="navbar-nav">
-					<li class="navbar-logo">
-						<a href="index.html">
-							<img src="images/logo.png" id="logo">
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="projects.html">Projects </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="formation.html">Formation </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="aboutme.html">A propos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
+	<a class="skip-link" href="#main">Aller au contenu</a>
+
+	<header class="site-header" id="site-header">
+		<div class="wrap header-inner">
+			<a href="#home" class="brand">
+				<span class="brand-mark">HA</span>
+				<span class="brand-name">Hocine Abdessalam</span>
+			</a>
+
+			<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Ouvrir le menu">
+				<span></span><span></span><span></span>
+			</button>
+
+			<nav class="primary-nav" id="primaryNav">
+				<ul>
+					<li><a href="#home" class="nav-link">Accueil</a></li>
+					<li><a href="#about" class="nav-link">À propos</a></li>
+					<li><a href="#projects" class="nav-link">Projets</a></li>
+					<li><a href="#skills" class="nav-link">Compétences</a></li>
+					<li><a href="#parcours" class="nav-link">Parcours</a></li>
+					<li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<!-- end header section -->
 
-	<!-- carousel section -->
-	<section class="carousel">
-		<div id="carousel" class="slide" data-ride="carousel">
-			<button class="carousel-control--prev is-hidden">
-				<img id="carousel-control" src="images/left.png" alt="">
-			</button>
-
-			<div class="track-container">
-				<ul class="carousel-track">
-					<li class="carousel-item active">
-						<a href="aboutme.html">
-							<img class="carousel_image" src="images/code-overlay.png" alt="First slide">
-							
-						</a>
-					</li>
-					<li class="carousel-item">
-						<a href="formation.html">
-							<img class="carousel_image" src="images/carousel2.jpg" alt="Second slide">
-						</a>
-					</li>
-					<li class="carousel-item">
-						<a href="projects.html">
-							<img class="carousel_image" src="images/42.jpg" alt="Third slide">
-						</a>
-					</li>
-				</ul>
-			</div>			
-			<button class="carousel-control--next">
-				<img id="carousel-control" src="images/right.png" alt="">
-			</button>
-			<div class="carousel-navDots">
-				<button class="carousel-indicator active"></button>
-				<button class="carousel-indicator"></button>
-				<button class="carousel-indicator"></button>
+	<main id="main">
+		<!-- Hero -->
+		<section class="hero" id="home">
+			<div class="hero-glow" aria-hidden="true"></div>
+			<div class="wrap hero-inner">
+				<p class="eyebrow reveal">Développeur Full-Stack Freelance</p>
+				<h1 class="reveal">
+					Je conçois des <span class="text-gradient">outils métier</span><br />
+					qui font vraiment tourner des entreprises.
+				</h1>
+				<p class="hero-lead reveal">
+					Alumni de l'école 42, indépendant depuis, je construis des logiciels sur-mesure —
+					de la caisse de restaurant en production à des CRM de gestion de chantier —
+					pensés pour résoudre des problèmes réels, pas des cas d'école.
+				</p>
+				<div class="hero-actions reveal">
+					<a href="#projects" class="btn btn-primary">Voir mes projets</a>
+					<a href="#contact" class="btn btn-ghost">Me contacter</a>
+				</div>
+				<div class="hero-stats reveal">
+					<div class="stat">
+						<span class="stat-num">3</span>
+						<span class="stat-label">SaaS &amp; outils métier en production</span>
+					</div>
+					<div class="stat">
+						<span class="stat-num">4+</span>
+						<span class="stat-label">Projets systèmes &amp; algo à 42</span>
+					</div>
+					<div class="stat">
+						<span class="stat-num">100%</span>
+						<span class="stat-label">Projets nés de besoins réels</span>
+					</div>
+				</div>
 			</div>
-		  </div>
-	</section>
-	<!-- end carousel section -->
+		</section>
 
-	<!-- about section -->
-	<section class="about_section chart">
-		<div class="main-container">
-			<div class="detail-box">
-				<h2 class="custom_heading">Available now, for <span>partial time</span></h2>
-				<p>
-					Currently 23 years old and student, I'm at 42 School since 2021, April. I just graduate 
-					from L3 MIASHS (Maths, Informatic, Economy bachelor) on early June 2021.
-				</p>
-				<br>
-				<p>
-					My experiences hepled me to develop my <b>relationship skills</b>, with customers as
-					with children. Indeed, I had the oportunity to work as private teacher in sciences, 
-					at home and at school (elementary to high school). <b>Autodidact</b> and <b>Digital
-					Native</b>, I also improved my seller's skills trough various experiences.
-				</p>
-				<br>
-				<p>
-					I'm looking for my first experience as <b>Web Developer Junior</b> and this is my hand-made website, 
-					to introduce myself. I really enjoyed coding this so please, <i>Just take a look !</i>
-				</p>
-			<div>
+		<!-- About -->
+		<section class="about" id="about">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="section-kicker">À propos</span>
+					<h2>Du code utile, pas du code décoratif.</h2>
+				</div>
+				<div class="about-grid">
+					<div class="about-text reveal">
+						<p>
+							J'ai commencé à coder à <strong>42</strong>, une école sans professeurs ni cours magistraux,
+							où tout s'apprend par le projet et l'entraide entre pairs. Ce format m'a appris une chose
+							essentielle : la meilleure façon de comprendre un problème, c'est de le résoudre soi-même,
+							puis de l'expliquer clairement à quelqu'un d'autre.
+						</p>
+						<p>
+							Aujourd'hui <strong>développeur freelance</strong>, je mets cette logique au service
+							d'entreprises qui ont de vrais besoins opérationnels : un restaurant qui a besoin d'une
+							caisse fiable et conforme, une entreprise du BTP qui pilote ses chantiers au feutre sur
+							un tableau, un carrossier qui veut savoir en un coup d'œil où en est chaque véhicule de
+							son parc. Mon rôle, c'est de transformer ça en logiciel — robuste, utilisable, et livré.
+						</p>
+						<p>
+							Je travaille principalement en <strong>TypeScript / JavaScript</strong> et
+							<strong> Python</strong>, avec une préférence pour les architectures simples,
+							maintenables, et des bases de données bien pensées plutôt que des solutions
+							sur-ingénierées.
+						</p>
+					</div>
+					<div class="about-highlights reveal">
+						<div class="highlight-card">
+							<h3>École 42</h3>
+							<p>Piscine de sélection réussie (18ᵉ/143), cursus Common Core en peer-to-peer learning depuis 2021.</p>
+						</div>
+						<div class="highlight-card">
+							<h3>Freelance</h3>
+							<p>Conception et développement d'outils métier sur-mesure pour des PME (restauration, BTP, automobile).</p>
+						</div>
+						<div class="highlight-card">
+							<h3>Approche</h3>
+							<p>Comprendre le métier du client avant d'écrire une ligne de code — puis livrer un produit qui tient en production.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="projects" id="projects">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="section-kicker">Projets</span>
+					<h2>Des produits en production, pas des maquettes.</h2>
+					<p class="section-sub">Trois outils métier développés en freelance, utilisés par de vraies entreprises au quotidien.</p>
+				</div>
+
+				<div class="project-grid">
+					<article class="project-card featured reveal">
+						<div class="project-card-top">
+							<span class="project-icon" aria-hidden="true">🧾</span>
+							<span class="project-tag-live">En production</span>
+						</div>
+						<h3>Caisse — SaaS de caisse pour restaurants</h3>
+						<p>
+							Système de point de vente (POS) complet, actuellement utilisé par
+							<strong>3 restaurants</strong> en conditions réelles. Architecture multi-application
+							(back-end, front-end, agent d'impression dédié), pensée pour la fiabilité en salle
+							et la conformité fiscale française.
+						</p>
+						<ul class="project-facts">
+							<li>Conformité fiscale <strong>NF525</strong> (norme anti-fraude TVA)</li>
+							<li>Agent d'impression tickets dédié pour matériel de caisse</li>
+							<li>Architecture SaaS multi-tenant pensée pour le multi-établissement</li>
+						</ul>
+						<div class="project-tags">
+							<span>React</span><span>NestJS</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Docker</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/ahocinemax/caisse" target="_blank" rel="noopener">Voir le dépôt →</a>
+						</div>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-card-top">
+							<span class="project-icon" aria-hidden="true">🏗️</span>
+							<span class="project-tag-client">Projet client privé</span>
+						</div>
+						<h3>CRM BTP — Pilotage complet d'entreprise du bâtiment</h3>
+						<p>
+							CRM sur-mesure centralisant tous les besoins d'une entreprise de BTP :
+							génération de devis, annuaire des sous-traitants, base de données matériaux,
+							géolocalisation des équipes et gestion de planning.
+						</p>
+						<ul class="project-facts">
+							<li>Suivi financier par chantier : coûts, gains prévus, % facturé / restant</li>
+							<li>Géolocalisation et planning des équipes terrain</li>
+							<li>Base de données centralisée matériaux &amp; sous-traitants</li>
+						</ul>
+						<div class="project-tags">
+							<span>Full-stack JS/TS</span><span>Base de données relationnelle</span><span>Géolocalisation</span>
+						</div>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-card-top">
+							<span class="project-icon" aria-hidden="true">🚗</span>
+							<span class="project-tag-client">Projet client privé</span>
+						</div>
+						<h3>Dashboard Carrossier — Gestion de parc automobile</h3>
+						<p>
+							Tableau de bord de suivi du parc automobile pour un carrossier, inspiré des
+							standards du secteur. Vue en temps réel de chaque véhicule en réparation,
+							avec durée estimée et temps restant.
+						</p>
+						<ul class="project-facts">
+							<li>Suivi temps réel par véhicule (durée estimée / temps restant)</li>
+							<li>Vue d'ensemble du parc pour prioriser les interventions</li>
+						</ul>
+						<div class="project-tags">
+							<span>Full-stack JS/TS</span><span>Dashboard temps réel</span>
+						</div>
+					</article>
+				</div>
+
+				<div class="section-head sub reveal">
+					<span class="section-kicker">École 42</span>
+					<h3>Projets du cursus Common Core</h3>
+				</div>
+				<div class="school-grid reveal">
+					<a class="school-card" href="https://github.com/ahocinemax/libft" target="_blank" rel="noopener">
+						<h4>libft</h4>
+						<p>Réimplémentation de fonctions de la libc en C, avec le même comportement que les originales.</p>
+					</a>
+					<a class="school-card" href="https://github.com/ahocinemax/minitalk" target="_blank" rel="noopener">
+						<h4>minitalk</h4>
+						<p>Serveur de communication client/serveur reposant uniquement sur les signaux UNIX.</p>
+					</a>
+					<a class="school-card" href="https://github.com/ahocinemax/push_swap" target="_blank" rel="noopener">
+						<h4>push_swap</h4>
+						<p>Algorithme de tri optimisé avec deux piles, et solveur pour un nombre minimal d'opérations.</p>
+					</a>
+					<a class="school-card" href="https://github.com/ahocinemax/so_long" target="_blank" rel="noopener">
+						<h4>so_long</h4>
+						<p>Petit jeu en 2D développé en C avec la miniLibX, du rendu graphique à la gestion des collisions.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="skills" id="skills">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="section-kicker">Compétences</span>
+					<h2>La boîte à outils.</h2>
+				</div>
+				<div class="skills-grid reveal">
+					<div class="skill-group">
+						<h3>Langages</h3>
+						<div class="badges">
+							<span>JavaScript</span><span>TypeScript</span><span>Python</span><span>C</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3>Front-end</h3>
+						<div class="badges">
+							<span>React</span><span>Vite</span><span>HTML5</span><span>CSS3</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3>Back-end</h3>
+						<div class="badges">
+							<span>Node.js</span><span>NestJS</span><span>Prisma ORM</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3>Données</h3>
+						<div class="badges">
+							<span>PostgreSQL</span><span>MySQL</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3>Outils &amp; infra</h3>
+						<div class="badges">
+							<span>Git</span><span>Docker</span><span>Linux</span><span>Vercel</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Parcours -->
+		<section class="parcours" id="parcours">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="section-kicker">Parcours</span>
+					<h2>Le chemin jusqu'ici.</h2>
+				</div>
+				<ol class="timeline reveal">
+					<li class="timeline-item">
+						<span class="timeline-date">Aujourd'hui</span>
+						<h3>Développeur freelance</h3>
+						<p>Conception et développement d'outils métier sur-mesure : SaaS de caisse, CRM de gestion, dashboards de suivi — pour des PME en restauration, BTP et automobile.</p>
+					</li>
+					<li class="timeline-item">
+						<span class="timeline-date">Depuis 2021</span>
+						<h3>42 — Cursus Common Core</h3>
+						<p>Peer-to-peer learning, projets systèmes et algorithmiques en C : libft, minitalk, push_swap, so_long, et bien d'autres.</p>
+					</li>
+					<li class="timeline-item">
+						<span class="timeline-date">2021</span>
+						<h3>Piscine de sélection 42</h3>
+						<p>Un mois intensif de coding non-stop. Classé 18ᵉ sur 143 à l'issue de la piscine.</p>
+					</li>
+					<li class="timeline-item">
+						<span class="timeline-date">2021</span>
+						<h3>Licence MIASHS</h3>
+						<p>Mathématiques, Informatique et Sciences Humaines et Sociales — analyse, statistiques, data science (RStudio, SQL), économie.</p>
+					</li>
+					<li class="timeline-item">
+						<span class="timeline-date">Avant</span>
+						<h3>Baccalauréat Scientifique</h3>
+						<p>Spécialité Informatique et Sciences du Numérique — premier lycée du département.</p>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="contact" id="contact">
+			<div class="wrap contact-inner">
+				<div class="section-head reveal">
+					<span class="section-kicker">Contact</span>
+					<h2>Un projet à concrétiser ?</h2>
+					<p class="section-sub">Discutons de votre besoin — je réponds rapidement.</p>
+				</div>
+				<div class="contact-links reveal">
+					<a class="contact-link" href="mailto:hocine.abdessalam@gmail.com">
+						<span class="contact-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+						</span>
+						<span>
+							<strong>Email</strong>
+							<small>hocine.abdessalam@gmail.com</small>
+						</span>
+					</a>
+					<a class="contact-link" href="https://www.linkedin.com/in/abdessalam-hocine-44b388210/" target="_blank" rel="noopener">
+						<span class="contact-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.48V23H.24V8.25zM8.24 8.25h4.3v2.02h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V23h-4.48v-6.72c0-1.6-.03-3.66-2.23-3.66-2.24 0-2.58 1.75-2.58 3.55V23H8.24V8.25z"/></svg>
+						</span>
+						<span>
+							<strong>LinkedIn</strong>
+							<small>abdessalam-hocine</small>
+						</span>
+					</a>
+					<a class="contact-link" href="https://github.com/ahocinemax" target="_blank" rel="noopener">
+						<span class="contact-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.09 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+						</span>
+						<span>
+							<strong>GitHub</strong>
+							<small>ahocinemax</small>
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap footer-inner">
+			<p>&copy; <span id="year">2026</span> Hocine Abdessalam. Conçu &amp; développé à la main.</p>
+			<a href="#home" class="back-to-top">Haut de page ↑</a>
 		</div>
-	</section>
-	<!-- end about section -->
+	</footer>
 
-	<!-- service section -->
-	<section class="service_section about">
-	</section>
-	<!-- end service section -->
-
-	<!-- footer section -->
-	<section class="container-fluid footer_section">
-		<p>&copy; 2022 All Rights Reserved By ahocine. 
-			<a style="font-size: 19px;" href="aboutme.html">En découvrir plus</a>
-		</p>
-	</section>
-	<!-- end footer section -->
-
-	<script type="text/javascript" src="js/carousel.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
